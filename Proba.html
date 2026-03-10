@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FilmWeb</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  background-color:#f2f2f2;
+}
+
+.navbar{
+  background-color:#111 !important;
+}
+
+.card{
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:10px;
+  margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== MENU ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">🎬 FilmWeb</a>
+  </div>
+</nav>
+
+<!-- ===== CARD-AK ===== -->
+<div class="container mt-4">
+<div class="row text-center">
+
+<!-- Titanic -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Titanic</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaldrama">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Pearl Harbour -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Pearl Harbour</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaldrama">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Crueles Intenciones -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Crueles intenciones</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaldrama">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Ghost -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Ghost</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaldrama">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Se lo que hiciteis el ultimo verano -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Se lo que hicisteis el ultimo verano</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalmiedo">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Aulas Peligrosas  -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Aulas Peligrosas</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalmiedo">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Scream  -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Scream</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalmiedo">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- El Resplandor  -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>El Resplandor</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalmiedo">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Los Vengadores -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Los Vengadores: Endgame</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalcienciaficcion">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Terminator -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Terminator</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalaccion">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Top Gun -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Top Gun</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalaccion">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Kill Bill -->
+<div class="col-12 col-md-4 mb-3">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+    <div class="card-body">
+      <h5>Kill Bill</h5>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalaccion">
+        Gehiago
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- ===== MODAL TITANIC ===== -->
+<div class="modal fade" id="modaldrama">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Titanic (1997)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Jack artista gazte bat da, eta Amerikara bidaiatzeko txartel bat irabazten du, inoiz eraikitako transatlantikorik handiena eta seguruena izan zen Titanic ontzian, harik eta zoritxarreko ezbehar bat gertatu zen arte...</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Leonardo DiCaprio = Jack Dawson</li>
+          <li>Kate Winslet = Rose DeWitt</li>
+          <li>Billy Zane = Caledon Hockley</li>
+          <li>Kathy Bates = Molly Brown</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL PEARL HARBOUR ===== -->
+<div class="modal fade" id="modaldrama">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Pearl Harbour (2001)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> 1941ean, bi lagun zahar pilotuk beren arteko desadostasunak alde batera uzten dituzte, AEBen aurkako bat-bateko japoniar eraso bati aurre egiteko..</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Ben Affleck = Rafe McCawley</li>
+          <li>Josh Hartnett = Capitan Daniel</li>
+          <li>Kate Beckinsale = Evelyn Jhonson</li>
+          <li>Jennifer Garner = Sandra</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL CRUELES INTENCIONES ===== -->
+<div class="modal fade" id="modaldrama">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Cruele intenciones (1999)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Kathryn Merteuil eta Sebastian Valmont Manhattanen bizi diren bi anai-arrebaorde aberats dira. Kathryn-en mutil-lagunak beste neska gazteago batengatik, Cecile Caldwell izenekoa, utzi du; horregatik, Sebastian-i bere arerio garbia liluratzeko proposamena egiten dio. Biek konkista eta apustuen joko bati ekiten diote, eta horrek urrutiegi eramango ditu.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Sarah Michelle Gellar = Kathryn Merteuil</li>
+          <li>Ryan Phillippe = Sebastian Valmont</li>
+          <li>Reese Witherspoon = Annette Hargrove</li>
+          <li>Selma Blair = Cecile Caldwell</li>
+          <li>Sean Patrick Thomas = Ronald Cliford </li>
+          <li>Christine Baranski = Bunny Caldwel</li>
+          <li>Eric Mabius = Greg McConnell</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Ghost ===== -->
+<div class="modal fade" id="modaldrama">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Ghost (1999)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Sam eta Molly oso maiteminduak daude. Egun batean, Sam negozio-itun ilun baten ondorioz hiltzen dute eta kaleetan barna ibiltzen den pertsonaia izpiritu bihurtzen da. Molly bakarrik utzi duelako oso triste, Samek aurkitzen du bere heriotzaren erruduna bere laguna eta bazkide ustel Carl dela.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Patrick Swayze = Sam Wheat</li>
+          <li>Demi Moore = Molly Jensen</li>
+          <li>Whoopi Goldberg = Oda Mae Brown</li>
+          <li>Tony Goldwyn = Carl Bruner</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL SE LO QUE HICISTEIS EL ULTIMO VERANO ===== -->
+<div class="modal fade" id="modalmiedo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Se lo que hicisteis el ultimo verano (1997)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Bost lagunek auto-istripu hilgarri bat eragiten dutenean, beren inplikazioa ezkutatu eta sekretua gordetzeko ituna egiten dute. Urtebete geroago, haien iragana itzuli egiten da haiek jazartzeko eta egiarekin aurrez aurre jartzeko: norbaitek badaki iazko udan zer egin zuten eta mendekua nahi du..</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Sarah Michelle Gellar = Helen Shivers</li>
+          <li>Freddie Prinze Jr. = Ray Bronson</li>
+          <li>Jennifer Love Hewitt = Julie James</li>
+          <li>Ryan Phillippe = Barry Cox</li>
+          <li>Muse Watson = Benjamin Willis</li>
+          <li>Bridgette Wilson = Elsa Shivers</li>
+          <li>Johnny Galecki = Max Neurick</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL AULAS PELIGROSAS ===== -->
+<div class="modal fade" id="modalmiedo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Aulas peligrosas (1998)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Institutuko irakasle bat hilda agertzen denean, ikasleak susmatzen hasten dira, irakasleak modu arraroan jokatzen dutelako. Geroago, gazteek deskubritzen dute estralurtar batzuek hartu dituztela, eta Lurra konkistatu nahi dutela.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Josh Hartnett = Zeke Tyler</li>
+          <li>Elijah Wood = Casey Connor</li>
+          <li>Clea DuVall = Stokely</li>
+          <li>Jordana Brewster = Delilah Profitt</li>
+          <li>Laura Harris = Marybeth Louise</li>
+          <li>Shawn Hatosy = Stan Rosado</li>
+          <li>Usher = Gabe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL Scream  ===== -->
+<div class="modal fade" id="modalmiedo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Scream (1996)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Woodsboro herrian maskaradun hiltzaile batek nerabeak jazartzen ditu telefono dei beldurgarrien bidez. Sidney Prescott eta bere lagunak susmagarri bihurtzen dira, eta azkenean hiltzailea nor den eta zergatik egiten dituen hilketak argitzen da.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Neve Campbell = Sidney Prescott</li>
+          <li>Courteney Cox = Gale Weathers</li>
+          <li>David Arquette = Dewey Riley</li>
+          <li>Skeet Ulrich = Billy Loomis</li>
+          <li>Matthew Lillard = Stu Macher</li>
+          <li>Rose McGowan = Tatum Riley</li>
+          <li>Jamie Kennedy = Randy Meeks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL El Resplandor  ===== -->
+<div class="modal fade" id="modalmiedo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">El Resplandor (1980)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> Jack Torrance bere emaztearekin eta zazpi urteko semearekin batera Colorado-ko Overlook hotel ikusgarri batera joaten da, hotela neguko denboraldian itxita eta elurrez isolatuta egon denean instalazioen mantentze-lanak egiteko. Bere helburua bakea eta lasaitasuna aurkitzea da nobela bat idazteko. Hala ere, hotelera iritsi eta gutxira, Jack nortasunaren nahaste beldurgarriak izaten hasi ahala, fenomeno paranormal bitxi eta izugarriak gertatzen hasten dira.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Jack Nicolson = Jack Torrance</li>
+          <li>Shelley Duvall = Wendy Torrance</li>
+          <li>Danny Lloyd = Daniel Torrance</li>
+          <li>Scatman Crothers = Dick Hallorann</li>
+          <li>Philip Stone = Delbert Grady</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL AVENGERS ===== -->
+<div class="modal fade" id="modalaccion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Los Vengadores: Endgame (2019)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong> "Los Vengadores: Infinity War" filmeko gertakari suntsitzaileen ondoren, unibertsoa hondamendian dago Thanos, Titan Eroaren, ekintzen ondorioz. Geratu diren aliatuen laguntzarekin, Mendekatzaileek berriro elkartu beharko dute hura geldiarazten saiatzeko eta unibertsoan ordena behin betiko berrezartzeko..</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Robert Downey Jr. = Iron Man</li>
+          <li>Chris Evans = Capitan America</li>
+          <li>Scarlett Johansson = Viuda Negra</li>
+          <li>Chris Hensworth = Thor</li>
+          <li>Mark Ruffalo = Hulk</li>
+          <li>Tom Holland = Spider Man</li>
+          <li>Elisabet Olsen = Bruja Escarlata </li>
+          <li>Paul Bettany = Vision </li>
+          <li>Tom Hiddleston = Loki </li>
+          <li>Jeremy Renner = Ojo de Halcon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL Terminator ===== -->
+<div class="modal fade" id="modalaccion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Terminator (1984)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong>Los Angeles, 2029. Makinek mundua nagusitzen dute. Haien aurka borrokatzen diren iraultzaileek John Connor dute buruzagi, 1980ko hamarkadan jaioa. Iraultza amaitzeko, makinek robot bat bidaltzea erabakitzen dute iragana – Terminator –, bere misioa John-en ama, Sarah Connor, hiltzea eta horrela haren jaiotza eragotzatzea izango delarik.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Arnold Schwarnegger = Terminator T-800</li>
+          <li>Linda Hamilton = Sarah Connor</li>
+          <li>Michael Biehn = Kyle Reese</li>
+          <li>Earl Boen = Dr.Peter Silberman</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL Top Gun ===== -->
+<div class="modal fade" id="modalaccion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Terminator (1986)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong>Estatu Batuetako Itsas Armadak pilotuentzako elite eskola bat sortu du borroka tekniketan adituak izango diren promozio bat prestatzeko. Akademia, Top Gun izenez ezaguna, onenak prestakuntza berezia jasotzen dute aldi berean ausartak eta hotzak izateko, egoera muturrekoetan ez nerbioak galtzeko eta F-14 baten hegaldiak egin bitartean soinua hautsi arren ez harritzeko gai izateko. Eskolara iristen da gazte Maverick, bere pilotaje temerario baina bikainagatik ospetsua.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Tom Cruise = Pete Mitchell</li>
+          <li>Val Kilmer = Tom "Iceman" Kazansky</li>
+          <li>Kelly McGillis = Charlote Blackwood</li>
+          <li>Meg Ryan = Carol Bradshaw</li>
+          <li>Anthony Edwards = Goose</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL Kill Bill ===== -->
+<div class="modal fade" id="modalaccion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Kill Bill (2003)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskribapena:</strong>Bere ezkontza egunean, profesional hilketa bat egiten duen emakume batek (Thurman) bere taldeko kide batzuek erasotua jasaten du, eta hauek Bill (David Carradine), erakunde kriminalaren buruak emandako aginduak betetzen dituzte. Erasotik bizirik ateratzen da, nahiz eta koma egoeran geratu. Lau urte geroago, amesgaizto handiz beteta eta amaren amets handiarekin esnatzen da, errebindikazio handia izateko nahiarekin.</p>
+        <p><strong>Aktore nagusiak:</strong></p>
+        <ul>
+          <li>Uma Thurman = La Novia</li>
+          <li>Lucy Liu = O-Ren Ishii</li>
+          <li>David Carradine = Bill</li>
+          <li>Daryl Hannah = Eller Driver</li>
+          <li>Michael Madsen = Budd</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+© 2026 FilmWeb
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
