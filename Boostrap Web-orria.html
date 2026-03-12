@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FilmWeb</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+background:#f2f2f2;
+}
+
+.navbar{
+background:#111 !important;
+}
+
+.card{
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+height:300px;
+object-fit:cover;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">🎬 FilmWeb</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Hasiera</a></li>
+<li class="nav-item"><a class="nav-link" href="Argazkiak.html">Filmak</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Kontaktua</a></li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+<!-- FILMEN CARD-AK -->
+
+<div class="container mt-4">
+<div class="row text-center">
+
+<!-- Titanic -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://quai10-website.s3.eu-west-3.amazonaws.com/backgrounds/titanic-25eme-anniversaire-0-c7c7e3d46a5a5774d577193f7199bec4-0.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Titanic</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalTitanic">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Pearl Harbour -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://imagenes.20minutos.es/files/image_640_auto/files/fp/uploads/imagenes/2021/05/31/pearl-harbor-2001.r_d.358-800.jpeg" class="card-img-top">
+<div class="card-body">
+<h5>Pearl Harbour</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalPearl">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Crueles Intenciones -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://i.ytimg.com/vi/-76aDVvDiKA/mqdefault.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Crueles Intenciones</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalCrueles">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Se lo que hicisteis el ultimo verano -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://cdn.milenio.com/uploads/media/2023/02/06/se-lo-que-hicieron-el.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Se lo que hicisteis el ultimo verano</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalVerano">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Aulas peligrosas -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://m.media-amazon.com/images/S/pv-target-images/3a6f788038d52023ad23406d4f6be6740003929b3aa18e1007ba9f4ac226bb4d.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Aulas Peligrosas</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalAulas">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Scream -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://m.media-amazon.com/images/S/pv-target-images/f969f9803ba8065aa914de5edba317e7c71a213c3b8fe499ed7ee1ca957178ce._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/a-f/cbsaacf/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1334,885,507,117_kv2153391f34c41b5172a3022deb992c03_.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Scream</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalScream">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Avengers Endgame-->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://img.unocero.com/2019/03/avengers-endgame-duracion-2-880x494.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Avengers Endgame</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalAvengers">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Terminator -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://cdn.sincroguia.tv/uploads/programs/t/e/r/xterminator-3067_SPA-31.jpg.pagespeed.ic.T50vL012C5.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Terminator</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalTerminator">Gehiago</button>
+</div>
+</div>
+</div>
+
+<!-- Top Gun -->
+
+<div class="col-12 col-md-4 mb-3">
+<div class="card">
+<img src="https://m.media-amazon.com/images/S/pv-target-images/aa593d87c7d10dc26d71a4e5741ffd4d0d6c20ec1fbd3eade1a8e9eeccbe718e.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Top Gun</h5>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalTopGun">Gehiago</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- MODAL TITANIC -->
+
+<div class="modal fade" id="modalTitanic">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Titanic (1997)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Jack eta Rose Titanic ontzian ezagutzen dira eta maitasun istorio dramatikoa bizi dute ontzia hondoratu arte.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Leonardo DiCaprio</li>
+<li>Kate Winslet</li>
+<li>Billy Zane</li>
+<li>Kathy Bates</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL PEARL HARBOUR -->
+
+<div class="modal fade" id="modalPearl">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Pearl Harbour (2001)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Bigarren Mundu Gerraren garaian bi pilotu lagunek eta erizain batek maitasun eta adiskidetasun istorioa bizitzen dute Pearl Harbor basearen aurkako eraso historikoan.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Ben Affleck</li>
+<li>Josh Hartnett</li>
+<li>Kate Beckinsale</li>
+<li>Jennifer Garner</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL CRUELES -->
+
+<div class="modal fade" id="modalCrueles">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Crueles Intenciones (1999)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Manhattaneko bi anai-arrebaorde aberatsek manipulazio joko arriskutsu bat hasten dute beste pertsonen bizitzekin jolastuz.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Sarah Michelle Gellar</li>
+<li>Ryan Phillippe</li>
+<li>Reese Witherspoon</li>
+<li>Selma Blair</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL  VERANO -->
+
+<div class="modal fade" id="modalVerano">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Se lo que hicisteis el ultimo verano (1997)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Lagun talde batek auto istripu hilgarri bat ezkutatzen du eta urtebete geroago norbaitek badaki zer egin zuten.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Jennifer Love Hewitt</li>
+<li>Freddie Prinze Jr.</li>
+<li>Sarah Michelle Gellar</li>
+<li>Ryan Phillippe</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL AULAS -->
+
+<div class="modal fade" id="modalAulas">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Aulas Peligrosas (1998)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Ikasleek deskubritzen dute institutuko irakasle batzuk estralurtarrek ordezkatu dituztela.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Josh Hartnett</li>
+<li>Elijah Wood</li>
+<li>Clea DuVall</li>
+<li>Jordana Brewster</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL SCREAM -->
+
+<div class="modal fade" id="modalScream">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Scream (1996)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Woodsboro herrian maskaradun hiltzaile batek nerabeak jazartzen ditu.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Neve Campbell</li>
+<li>Courteney Cox</li>
+<li>David Arquette</li>
+<li>Matthew Lillard</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL AVENGERS -->
+
+<div class="modal fade" id="modalAvengers">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Avengers Endgame (2019)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Thanos-ek eragindako hondamendiaren ondoren Avengers taldeak berriro elkartzen dira unibertsoa salbatzeko.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Robert Downey Jr.</li>
+<li>Chris Evans</li>
+<li>Scarlett Johansson</li>
+<li>Chris Hemsworth</li>
+<li>Tom Holland</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL TERMINATOR -->
+
+<div class="modal fade" id="modalTerminator">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Terminator (1984)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Etorkizunetik bidalitako robot batek Sarah Connor hil nahi du etorkizuneko erresistentziaren liderra jaio ez dadin.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Arnold Schwarzenegger</li>
+<li>Linda Hamilton</li>
+<li>Michael Biehn</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- MODAL TOP GUN -->
+
+<div class="modal fade" id="modalTopGun">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-dark text-white">
+<h5 class="modal-title">Top Gun (1986)</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p><strong>Deskribapena:</strong> Maverick pilotu gazteak eliteko Top Gun akademian entrenatzen du hegazkin pilotu onena bihurtzeko.</p>
+<p><strong>Aktore nagusiak:</strong></p>
+<ul>
+<li>Tom Cruise</li>
+<li>Val Kilmer</li>
+<li>Kelly McGillis</li>
+<li>Meg Ryan</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer>
+© 2026 FilmWeb
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
